@@ -18,7 +18,7 @@ class UserProvider extends Component {
           this.setState({ user: { uid: snapshot.id, ...snapshot.data() } });
         });
       }
-      this.setState({ user: userAuth });
+      this.setState({ user: null });
     });
   };
 
