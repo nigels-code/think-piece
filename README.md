@@ -2,7 +2,7 @@
 
 I wrote this while following Steve Kinney's Frontend Masters "Firebase with React" course.
 
-Technologies used: React, Firebase (Firestore), Javascript, HTML, SCSS
+Technologies used: React, Firebase (Firestore), Javascript, HTML, SASS
 
 ## Installation
 ```sh
