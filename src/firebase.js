@@ -1,15 +1,15 @@
-import firebase from "firebase/app";
-import "firebase/firestore";
-import "firebase/auth";
-import "firebase/storage";
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
+import 'firebase/storage';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCpG9w9jyAK6rkUjgks7kvb-2yReZ_PmP0",
-  authDomain: "think-piece-95018.firebaseapp.com",
-  projectId: "think-piece-95018",
-  storageBucket: "think-piece-95018.appspot.com",
-  messagingSenderId: "2534179364",
-  appId: "1:2534179364:web:c7f21f1331d42e32ca8eb1"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storgaeBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGEING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID
 };
 firebase.initializeApp(firebaseConfig);
 
@@ -45,7 +45,7 @@ export const createUserProfileDocument = async (user, additionalData) => {
         ...additionalData
       });
     } catch (error) {
-      console.error("Error reating user", error.message);
+      console.error('Error reating user', error.message);
     }
   }
   return getUserDocument(user.uid);
@@ -54,9 +54,9 @@ export const createUserProfileDocument = async (user, additionalData) => {
 export const getUserDocument = async (uid) => {
   if (!uid) return null;
   try {
-    return firestore.collection("users").doc(uid);
+    return firestore.collection('users').doc(uid);
   } catch (error) {
-    console.error("Error fetching user", error.message);
+    console.error('Error fetching user', error.message);
   }
 };
 
