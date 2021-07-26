@@ -4,12 +4,14 @@ import 'firebase/auth';
 import 'firebase/storage';
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_PROJECT_ID,
-  storgaeBucket: process.env.REACT_APP_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_APP_ID
+  apiKey: 'AIzaSyCpG9w9jyAK6rkUjgks7kvb-2yReZ_PmP0',
+  authDomain: 'think-piece-95018.firebaseapp.com',
+  databaseURL:
+    'https://think-piece-95018-default-rtdb.europe-west1.firebasedatabase.app',
+  projectId: 'think-piece-95018',
+  storageBucket: 'think-piece-95018.appspot.com',
+  messagingSenderId: '2534179364',
+  appId: '1:2534179364:web:c7f21f1331d42e32ca8eb1'
 };
 firebase.initializeApp(firebaseConfig);
 
