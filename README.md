@@ -4,8 +4,8 @@ I wrote this while following Steve Kinney's Frontend Masters "Firebase with Reac
 
 Technologies used: React, Firebase (Firestore), Javascript, HTML, SASS.
 
-I have set up a CI/CD pipeline between Github and Cloudflare Pages.  
-Open <https://think-piece.pages.dev/> to see this project in production.
+I have connected this repo to Cloudflare Pages.  
+Open <https://think-piece.pages.dev/> to see the project in production.
 
 ## Installation
 ```sh
