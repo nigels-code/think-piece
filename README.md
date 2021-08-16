@@ -2,7 +2,7 @@
 
 I wrote this while following Steve Kinney's Frontend Masters "Firebase with React" course.
 
-Technologies used: React, Firebase (Firestore), Javascript, HTML, SASS.
+A Single Page Application developed with React, Firebase (Firestore), Javascript, HTML, SASS.
 
 I have connected this repo to Cloudflare Pages.  
 Open <https://think-piece.pages.dev/> to see the project in production.
